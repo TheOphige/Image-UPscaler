@@ -25,7 +25,9 @@ def upscale_image(model, image, scale_factor):
 
 # Streamlit app interface
 st.title("Image Upscaling with Real-ESRGAN")
-st.write("Upload an image and use the slider to adjust the scaling factor (2x, 4x).")
+about = "Enhance and upscale your old images for stunning clarity and higher resolution, bringing new life to your favorite memories"
+st.write(about)
+st.info("Upload an image and use the slider to adjust the scaling factor (2x, 4x).")
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
